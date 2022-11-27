@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<style>
+.button {
+  border-radius: 10px;
+  background-color: #90d9e6;
+  border: none;
+  color: #111010;
+  text-align: center;
+  font-size: 28px;
+  padding: 60px;
+  width: 300px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 100px;
+  margin-bottom:30px;
+  margin-right:160px;
+  margin-left:250px;
+  margin-top:40px;
+  font-family: cursive;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+h1{
+    text-align: center;
+    font-size: 50px;
+    font-family:cursive;
+    text-decoration: wavy;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    color:aliceblue
+}
+.imge{
+    background-image: url("j.jpg");
+    background-size: cover;
+    background-repeat: no repeat;
+    background-attachment: fixed;
+    opacity:0.75;
+}
+.sidepanel  {
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgb(239, 229, 229);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #060606;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidepanel a:hover {
+  color: #e01313;
+}
+
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+</style>
+</head>
+<body class="imge">
+    <div>
+<h1>Available Hostels</h1>
+<div class="container mt-3">
+<div class="row">
+	<button class="button"  onclick="openNav1()" style="background-color: rgb(188, 250, 229);"><span>Revathi<br>3 mem</span></button>
+	<button class="button"  onclick="openNav2()" style="background-color: rgb(199, 215, 236);"><span>Rohini<br>3 mem</span></button><br>
+    <button class="button"  onclick="openNav3()" style="background-color:rgb(244, 202, 244);" href="#"><span>Bhuvana<br>4 mem</span></button>
+    <button class="button"  onclick="openNav4()" style="background-color:beige" href="#"><span>Spoorthi<br>8 mem</span></button><br>
+    <button class="button"  onclick="openNav5()" style="background-color:rgb(171, 209, 222)" href="#"><span>Srujana<br>8 mem</span></button>
+    <button class="button"  onclick="openNav6()" style="background-color:lavender" href="#"><span>Medha<br>4 mem</span></button>  
+</div>
+</div> 
+</div> 
+<div id="mySidepanel1" class="sidepanel">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">×</a>
+    <a href="ab.html">About</a>   
+    <a href="Layout.png">LayOut</a>
+    <a href="stureg.html">Book</a>
+    <a href="contact.html">Contact-Us</a>
+  </div>
+
+  <div id="mySidepanel2" class="sidepanel">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">×</a>
+    <a href="ab.html">About</a>   
+    <a href="Layout.png">LayOut</a>
+    <a href="stureg.html">Book</a>
+    <a href="contact.html">Contact-Us</a>
+  </div>
+
+  <div id="mySidepanel3" class="sidepanel">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav3()">×</a>
+    <a href="ab.html">About</a>   
+    <a href="layout3.png">LayOut</a>
+    <a href="stureg.html">Book</a>
+    <a href="contact.html">Contact-Us</a>
+  </div>
+
+  <div id="mySidepanel4" class="sidepanel">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav4()">×</a>
+    <a href="spo8.html">About</a>   
+    <a href="Layout2.png">LayOut</a>
+    <a href="stureg.html">Book</a>
+    <a href="contact.html">Contact-Us</a>
+  </div>
+  
+  <div id="mySidepanel5" class="sidepanel">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav5()">×</a>
+    <a href="spo8.html">About</a>   
+    <a href="Layout2.png">LayOut</a>
+    <a href="stureg.html">Book</a>
+    <a href="contact.html">Contact-Us</a>
+  </div>
+
+  <div id="mySidepanel6" class="sidepanel">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav6()">×</a>
+    <a href="ab4.html">About</a>   
+    <a href="Layout.png">LayOut</a>
+    <a href="stureg.html">Book</a>
+    <a href="contact.html">Contact-Us</a>
+  </div>
+
+
+  <script>
+    function openNav1() {
+      document.getElementById("mySidepanel1").style.width = "250px";
+    }
+    
+    function closeNav1() {
+      document.getElementById("mySidepanel1").style.width = "0";
+    }
+
+    function openNav2() {
+      document.getElementById("mySidepanel2").style.width = "250px";
+    }
+
+    function closeNav2() {
+      document.getElementById("mySidepanel2").style.width = "0";
+    }
+
+    function openNav3() {
+      document.getElementById("mySidepanel3").style.width = "250px";
+    }
+
+    function closeNav3() {
+      document.getElementById("mySidepanel3").style.width = "0";
+    }
+
+    function openNav4() {
+      document.getElementById("mySidepanel4").style.width = "250px";
+    }
+
+    function closeNav4() {
+      document.getElementById("mySidepanel4").style.width = "0";
+    }
+
+    function openNav5() {
+      document.getElementById("mySidepanel5").style.width = "250px";
+    }
+
+    function closeNav5() {
+      document.getElementById("mySidepanel5").style.width = "0";
+    }
+
+    function openNav6() {
+      document.getElementById("mySidepanel6").style.width = "250px";
+    }
+
+    function closeNav6() {
+      document.getElementById("mySidepanel6").style.width = "0";
+    }
+    </script>
+</body>
+</html>

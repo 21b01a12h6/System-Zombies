@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport"
+            content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+      <style>
+         h1{
+         color: rgb(13, 13, 13);
+         margin-top: 20px;
+         font-family: Comic Sans MS, cursive, sans-serif;
+         }
+         .button{
+         margin-left: 45%;
+         }
+         #e{
+            margin-top: 50px;
+            margin-left: -350px;
+            background-color: black;
+            color: aliceblue;
+         }
+         #f{
+            margin-top: 50px;
+            margin-left: 25px;
+            background-color: black;
+            color: aliceblue;
+         }
+         #g{
+            margin-top: 50px;
+            margin-left: 40px;
+            background-color: black;
+            color: aliceblue;
+         }
+         #h{
+            margin-top: 50px;
+            margin-left: 40px;
+            background-color: black;
+            color: aliceblue;
+         }
+         #j{
+            margin-top: 50px;
+            margin-left: 40px;
+            background-color: black;
+            color: aliceblue;
+         }
+         hr{
+            background-color: black;
+            margin-left: 200px;
+            margin-right: 300px;
+            margin-top: 40px;
+         }
+         body{
+            background-image: url("grunge-background-texture-3.jpg");
+         }
+      </style>
+      <script>
+         function before(){
+             document.getElementById('message').innerHTML="The objective of the Hostel is to provide suitable and comfortable accommodation for deserving students from Andhra Pradesh and outside the State.The Hostel has a number of blocks to accommodate exclusively for girl students.Ideal hostel facility with homely atmosphere is provided within the campus.  Many recreation facilities are also provided.";
+         }          
+         function afterr(){
+             document.getElementById('message').innerHTML="*Cleaning : Everyday <br> *Roomies : 8 <br> *AC : Everyday <br> *Fans : 4 <br> *StudyTable : Yes <br> *Fridge : yes<br>*Hostel timings:before 12:00 <br> *Canteens : Nearby <br><br>------- THANK YOU-------"  ;
+         }
+         function nxt(){
+             document.getElementById('message').innerHTML="Per Annum : 1,20,000/- <br> AC bill: self <br> Fridge bill : self <br> First-Installment : 80,000/- <br> Sec-Installment : 40,000/- <br> Dhobi : Available(250/-) <br>";
+         }
+         function nxt2(){
+             document.getElementById('message').innerHTML="Discipline, to be observed in the Hostel, shall be as per the direction of the Hostel Committee and the Warden.Students are not allowed to stay in the Hostel during college hours without the prior permission of the Hostel / College authorities.RAGGING in any form in the Hostel premises or in the Campus is an offence as per the Constitution and is prohibited.";
+         }
+         function nxt3(){
+             document.getElementById('message').innerHTML="Arrangement for 24 hours power supply. A reading room / T.V. room is provided separately in each block. It will be operated during stipulated hours.Indoor / outdoor games are provided in the hostel.Management provides transport facility for admitting her to a nursing home / hospital ather own cost. Students will not permit to consult their family doctors on health ground.";
+         }
+      </script>
+   </head>
+   <body>
+      <div class="m">
+      <div class="button">
+         <button class="btn btn-warning" id="e" onclick=before();>
+            Home
+         </button>
+         <button  class="btn btn-success" id="f" onclick=afterr();>
+             Hostel Details
+         </button>
+         <button class="btn btn-warning" id="g" onclick=nxt();>
+            Fee Details
+         </button>
+         <button  class="btn btn-success" id="h" onclick=nxt2();>
+           Security
+        </button>
+        <button class="btn btn-warning" id="j" onclick=nxt3();>
+         Amenties
+      </button>
+      </div><hr >
+   </div>
+      <div class="container">
+         <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+               <h1 id="message">
+                  
+               </h1>         
+            </div>
+            <div class="col-md-3"></div>
+         </div>
+      </div>
+   </body>
+</html>
